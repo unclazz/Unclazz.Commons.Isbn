@@ -2,6 +2,7 @@
 
 `Unclazz.Commons.Isbn` はISBNコードをシリアライズもしくはデシリアライズするためのライブラリです。
 `ISBN-10` および `ISBN-13` の双方をサポートしています。
+アセンブリは[NuGet Galleryで公開](https://www.nuget.org/packages/Unclazz.Commons.Isbn/)されているので、NuGetを通じて取得することができます。
 
 ## 名前空間
 
