@@ -36,7 +36,7 @@ var agencyName = isbnCode.Agency; // => "Japan"
 // 出版者記号は藤原書店を表す "938661"
 var publisher = isbnCode.Publisher; // => Digits("938661")
 
-// 書名記号は "『社会学の社会学』" を示す "23"
+// 書名記号は 『社会学の社会学』 を示す "23"
 var title = isbnCode.Title; // => Digits("23")
 
 // 検査数字はモジュラス10で計算された '6'
@@ -45,7 +45,7 @@ var checkDigit = isbnCode.CheckDigit; // => '6'
 // 引数なしの ToString() はプレフィクスやハイフンを含んだ形式の文字列を返す
 var isbnString2 = isbnCode.ToString(); // => "ISBN-13: 978-4-938661-23-6"
 var isbnString3 = isbnCode.ToString(IsbnCodeStyles.WithHyphens); // =>  "978-4-938661-23-6"
-var isbnString3 = isbnCode.ToString(IsbnCodeStyles.AsIsbn10Code); // => "4-938661-23-6"
+var isbnString4 = isbnCode.ToString(IsbnCodeStyles.AsIsbn10Code); // => "4-938661-23-6"
 ```
 
 ### グループとレンジ
