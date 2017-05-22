@@ -191,6 +191,11 @@ namespace Unclazz.Commons.Isbn
         /// <returns>文字列表現</returns>
         public string ToString(IsbnCodeStyles styles)
         {
+            if (Flag.StringValue != "978" && styles.HasFlag(IsbnCodeStyles.AsIsbn10Code))
+            {
+                throw new ArgumentException("This ISBN code cannot be represented by ISBN-10 style.");
+            }
+
             var buff = new StringBuilder();
             if (styles.HasFlag(IsbnCodeStyles.WithIsbnPrefix))
             {
