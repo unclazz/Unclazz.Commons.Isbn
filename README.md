@@ -31,6 +31,17 @@ ISBNコードの各部分は、国・地域・言語圏とその出版者ごと�
 var isbnString = "ISBN-13: 978-4938661236";
 var isbnCode = IsbnCode.Parse(isbnString);
 
+// 以下のコードもこれと同義
+// var isbnCode = IsbnCode.Parse("ISBN-13: 978-4-938661-23-6");
+// var isbnCode = IsbnCode.Parse("ISBN-13 978-4938661236");
+// var isbnCode = IsbnCode.Parse("ISBN 978-4-938661-23-6");
+// var isbnCode = IsbnCode.Parse("ISBN978-4-938661-23-6");
+// var isbnCode = IsbnCode.Parse("978-4-938661-23-6");
+// var isbnCode = IsbnCode.Parse("9784938661236");
+// var isbnCode = IsbnCode.Parse("ISBN-10: 4-938661-23-6");
+// var isbnCode = IsbnCode.Parse("4-938661-23-6");
+// var isbnCode = IsbnCode.Parse("4938661236");
+
 // グループ記号は日本国内の出版であることを示す "4"
 var group = isbnCode.Group; // => Digits("4")
 var agencyName = isbnCode.Agency; // => "Japan"
