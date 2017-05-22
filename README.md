@@ -48,7 +48,7 @@ var isbnString3 = isbnCode.ToString(IsbnCodeStyles.WithHyphens); // =>  "978-4-9
 var isbnString4 = isbnCode.ToString(IsbnCodeStyles.AsIsbn10Code); // => "4-938661-23-6"
 ```
 
-### グループとレンジ
+## グループとレンジ
 
 ISBNのフラグ、グループ記号、そして出版者記号の値は、ISBNコードの管理団体により割り振られます。
 そしてISBNコード全体の長さ（桁数）は固定されているので、グループ記号は出版者記号と書名記号の長さ（桁数）を、出版者記号は書名記号の長さ（桁数）を規定します。
